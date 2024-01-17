@@ -84,7 +84,6 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 100%; /* Make sure the container takes full width */
   max-width: var(--max-width); /* Limit the max width */
   margin-inline: auto;
-  overflow: auto; /* Add a scrollbar if the content is too big */
 }
 
 

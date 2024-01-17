@@ -3,7 +3,7 @@ import Main from './components/Main.vue';
 </script>
 
 <template>
-  <Main msg="Sales." />
+  <Main logoName="Sales." />
 </template>
 
 <style scoped>

@@ -3,14 +3,14 @@ import Sidebar from './Sidebar.vue'
 import TopHeader from './TopHeader.vue'
 import ProductsInfo from './ProductsInfo.vue'
 
-defineProps<{ msg: string }>()
+defineProps<{ logoName: string }>()
 
 </script>
 
 <template>
-    <main class="container wrapper font-poppins md:mx-auto relative gap-10">
+    <main class="container wrapper font-poppins md:mx-auto relative gap-10 h-svh">
         <div class="side w-full lg:min-w-56 bg-white flex flex-col">
-            <Sidebar :msg="msg" ></Sidebar>
+            <Sidebar :msg="logoName" ></Sidebar>
         </div>
         <div class="header">
             <TopHeader></TopHeader>

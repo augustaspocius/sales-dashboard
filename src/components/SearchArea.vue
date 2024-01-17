@@ -2,8 +2,8 @@
 import { ref } from 'vue'
 
 defineProps<{ label: string, placeholderText: string }>()
-
 const searchString = ref('');
+
 </script>
 
 <template>
@@ -16,7 +16,8 @@ const searchString = ref('');
                     px-3 placeholder:text-grey focus:outline-grey"
             :id="label" type="text"
             :placeholder="placeholderText"
-            v-model="searchString">
+            v-model="searchString"
+            @blur="$emit('updateSearch', searchString)">
             
         <table>
             
